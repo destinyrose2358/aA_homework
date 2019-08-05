@@ -62,3 +62,55 @@ if __FILE__ == $PROGRAM_NAME
     p queue.dequeue
     p queue.peek
 end
+
+
+class Map
+
+
+    def initialize
+        @map = []
+    end
+
+    def set(key, value)
+        index = find(key)
+        index ? @map[index][1] = value : @map << [key, value]
+    end
+
+    def get(key)
+        index = find(key)
+        index ? @map[index][1] : nil
+    end
+
+    def delete(key)
+        index = find(key)
+        @map = @map[0...index] + @map[index + 1..-1]
+    end
+
+    def show
+        output = "{ "
+
+        @map.each do |pair|
+            output += "#{pair[0]} => #{pair[1]}, "
+        end
+        return output[0...-2] + " }" unless output.length <= 2
+        "{ }"
+    end
+
+    private
+
+    def find(key)
+        return @map.index { |pair| pair[0] == key }
+    end
+
+
+end
+
+if __FILE__ == $PROGRAM_NAME
+    map = Map.new
+    map.set(1, 3)
+    p map.show
+    map.set(1, "apple")
+    p map.show
+    map.delete(1)
+    p map.show
+end
