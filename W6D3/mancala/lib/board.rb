@@ -68,6 +68,17 @@ class Board
   end
 
   def winner
-    
+    score1 = cups[6].length
+    score2 = cups[13].length
+    case score1 <=> score2
+    when -1
+      names[1]
+    when 0
+      :draw
+    when 1
+      names[0]
+    end
   end
+
+  
 end
