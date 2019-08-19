@@ -110,6 +110,7 @@ class Playwright
       VALUES
         (?, ?)
     SQL
+    self.id = PlayDBConnection.instance.last_insert_row_id
   end
 
   def update
