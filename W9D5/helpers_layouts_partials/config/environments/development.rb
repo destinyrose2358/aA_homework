@@ -8,7 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-
+  config.action_mailer.delivery_method = :letter_opener
   # Show full error reports.
   config.consider_all_requests_local = true
 
