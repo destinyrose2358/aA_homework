@@ -56,7 +56,8 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'shoulda-matchers'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
