@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function(){
     centers.forEach((el, idx) => {
       let gapAngle = (idx * 240);
       context.beginPath();
-      context.arc(el[0], el[1], ringSize, angleToRadians(-185 + gapAngle), angleToRadians(95 + gapAngle));
+      context.arc(el[0], el[1], ringSize, angleToRadians(-185 + gapAngle), angleToRadians(66 + gapAngle));
       context.strokeStyle = color;
       context.lineWidth = ringThickness;
       context.stroke();
       context.beginPath();
-      context.arc(el[0], el[1], ringSize, angleToRadians(115 + gapAngle), angleToRadians(158 + gapAngle));
+      context.arc(el[0], el[1], ringSize, angleToRadians(82 + gapAngle), angleToRadians(158 + gapAngle));
       context.stroke();
       console.log("step");
     })
