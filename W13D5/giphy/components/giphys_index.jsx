@@ -1,6 +1,5 @@
 import React from 'react';
-
-import GiphysIndexItem from './giphys_index_item';
+import GiphyIndexItem from './giphys_index_item';
 
 export default class GiphysIndex extends React.Component {
   constructor(props) {
