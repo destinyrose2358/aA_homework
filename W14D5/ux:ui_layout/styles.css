@@ -1,0 +1,126 @@
+body {
+  font-size: 18px;
+}
+
+.splash img {
+  width: 80%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+}
+
+.splash {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash p {
+  position: absolute;
+  font-weight: 700;
+  font-size: 36px;
+  color: black;
+}
+
+.nav-bar {
+  display: flex;
+  background: beige;
+  justify-content: space-between;
+}
+
+.nav-bar > ul {
+  display: flex;
+  width: 30%;
+}
+
+.session-nav {
+  justify-content: center;
+}
+
+.account-nav {
+  justify-content: flex-end;
+}
+
+img.icon {
+  width: 30px;
+  height: auto;
+}
+
+li > a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: blue;
+  display: block;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+}
+
+li {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+form input:not([type="submit"]){
+  background: white;
+  border: 1px solid darkblue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px;
+}
+
+form input {
+  margin: 5px;
+}
+
+form input[type="submit"] {
+  background: blue;
+  border: 1px solid darkblue;
+  color: white;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  background: beige;
+  border-top: 1px solid darkblue;
+}
+
+main {
+  background: beige;
+  border: 1px solid darkblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main ul {
+  width: 15%;
+  box-sizing: border-box;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+}
+
+footer {
+  padding: 5px;
+  color: grey;
+}
+
