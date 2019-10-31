@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: destinyrose2358/nginx-app
+    ports:
+      - '80:80'
